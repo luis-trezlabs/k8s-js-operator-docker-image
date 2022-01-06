@@ -1,0 +1,20 @@
+{
+  "name": "operator",
+  "version": "1.0.0",
+  "description": "Operator K8s with JS",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc"
+  },
+  "author": "luis and marvin",
+  "license": "ISC",
+  "dependencies": {
+    "@dot-i/k8s-operator": "^1.2.0",
+    "@kubernetes/client-node": "^0.16.1",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "ts-node": "^10.1.0"
+  }
+}
