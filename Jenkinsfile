@@ -1,14 +1,9 @@
 pipeline {
-  agent {
-    node {
-      label 'Build'
-    }
-
-  }
+  agent any
   stages {
     stage('Build Image') {
       steps {
-        sh 'build .'
+        sh 'docker build . -t luisbodev/ts-operator-jenkins'
       }
     }
 
