@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build Image') {
       steps {
-        echo 'Test'
+        sh 'docker build . -t luisbodev/ts-operator-jenkins'
       }
     }
 
